@@ -1,0 +1,21 @@
+{
+  "name": "ADEssen",
+  "short_name": "ADEssen",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f1eb",
+  "theme_color": "#B7A37A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
