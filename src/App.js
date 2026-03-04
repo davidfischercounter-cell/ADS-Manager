@@ -6,6 +6,7 @@ import PersonDetail from "./components/PersonDetail";
 import Spueldienst from "./components/Spueldienst";
 import "./index.css";
 import logo from "./logo.png";
+import pkg from "../package.json";
 
 function App() {
   const [persons, setPersons] = useState([]);
@@ -92,15 +93,25 @@ function App() {
           paddingBottom: "15px",
         }}
       >
-        <h1 style={{ margin: 0, fontWeight: 500 }}>Guthaben Manager</h1>
+        <h1 style={{ margin: 0, fontWeight: 500 }}>ADS-Essen</h1>
+
+        <div
+          style={{
+            fontSize: "12px",
+            textAlign: "center",
+            opacity: 0.6,
+            marginBottom: "0px",
+          }}
+        >
+          v{pkg.version}
+        </div>
 
         <img
           src={logo}
           alt="Logo"
-          onClick={() => setCurrentPage("dashboard")}
           style={{
             height: "45px",
-            cursor: "pointer",
+            objectFit: "contain",
           }}
         />
       </div>
